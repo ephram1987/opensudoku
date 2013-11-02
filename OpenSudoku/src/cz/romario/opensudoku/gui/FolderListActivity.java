@@ -87,6 +87,7 @@ public class FolderListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.folder_list);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 		View getMorePuzzles = (View) findViewById(R.id.get_more_puzzles);
 
 		setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);

@@ -55,6 +55,7 @@ public class SudokuExportActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.sudoku_export);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		mFileNameEdit = (EditText) findViewById(R.id.filename);
 		mDirectoryEdit = (EditText) findViewById(R.id.directory);

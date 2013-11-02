@@ -106,18 +106,19 @@ public class SudokuPlayActivity extends Activity {
 		// go fullscreen for devices with QVGA screen (only way I found
 		// how to fit UI on the screen)
 		Display display = getWindowManager().getDefaultDisplay();
-		if ((display.getWidth() == 240 || display.getWidth() == 320)
-				&& (display.getHeight() == 240 || display.getHeight() == 320)) {
+		//if ((display.getWidth() == 240 || display.getWidth() == 320)
+		//		&& (display.getHeight() == 240 || display.getHeight() == 320)) {
 			requestWindowFeature(Window.FEATURE_NO_TITLE);
 			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 					WindowManager.LayoutParams.FLAG_FULLSCREEN);
 			mFullScreen = true;
-		}
+		//}
 
 		// theme must be set before setContentView
 		AndroidUtils.setThemeFromPreferences(this);
 
 		setContentView(R.layout.sudoku_play);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		mRootLayout = (ViewGroup) findViewById(R.id.root_layout);
 		mSudokuBoard = (SudokuBoardView) findViewById(R.id.sudoku_board);

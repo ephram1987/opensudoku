@@ -110,6 +110,7 @@ public class SudokuListActivity extends ListActivity {
 		AndroidUtils.setThemeFromPreferences(this);
 
 		setContentView(R.layout.sudoku_list);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 		mFilterStatus = (TextView) findViewById(R.id.filter_status);
 
 		getListView().setOnCreateContextMenuListener(this);

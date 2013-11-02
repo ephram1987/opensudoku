@@ -112,6 +112,7 @@ public class IMPopup extends InputMethod {
 				}
 			}
 			mEditCellDialog.show();
+			//com.tomoon.sdk.Emulator.configure(mEditCellDialog.getWindow());
 		} else {
 			mBoard.hideTouchedCellHint();
 		}

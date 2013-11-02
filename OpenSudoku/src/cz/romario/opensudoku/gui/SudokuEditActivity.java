@@ -95,6 +95,7 @@ public class SudokuEditActivity extends Activity {
 		AndroidUtils.setThemeFromPreferences(this);
 
 		setContentView(R.layout.sudoku_edit);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 		mRootLayout = (ViewGroup) findViewById(R.id.root_layout);
 		mBoard = (SudokuBoardView) findViewById(R.id.sudoku_board);
 

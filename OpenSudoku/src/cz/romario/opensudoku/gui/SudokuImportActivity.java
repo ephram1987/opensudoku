@@ -45,6 +45,7 @@ public class SudokuImportActivity extends Activity {
 
 		requestWindowFeature(Window.FEATURE_LEFT_ICON);
 		setContentView(R.layout.import_sudoku);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 		getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
 				R.drawable.opensudoku_logo_72);
 

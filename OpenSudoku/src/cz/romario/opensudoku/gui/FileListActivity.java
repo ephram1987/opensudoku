@@ -71,6 +71,7 @@ public class FileListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.file_list);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
 		// Inform the list we provide context menus for items

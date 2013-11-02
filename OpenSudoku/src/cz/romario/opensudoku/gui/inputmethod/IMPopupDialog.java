@@ -74,6 +74,7 @@ public class IMPopupDialog extends Dialog {
 		title.setVisibility(View.GONE);
 
 		setContentView(mTabHost);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	/**
